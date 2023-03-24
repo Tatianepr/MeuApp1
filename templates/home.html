@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Apenas uma Home</h1>
+
+<table>
+    <thead></thead>
+    <tr>
+        <th>Nome</th>
+        <th>Quantidade</th>
+        <th>Valor</th>
+        <th> </th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for produto in produtos %}
+    <tr>
+        <td>{{ produto.nome }}</td>
+        <td>{{ produto.quantidade }}</td>
+        <td>{{ produto.valor }}</td>
+        <!-- a função url_for deve receber o nome da FUNÇÃO e não o nome da página da rota-->
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+</body>
+</html>
